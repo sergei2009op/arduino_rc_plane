@@ -5,11 +5,11 @@ transmitter/platformio.ini
 
 transmitter/.travis.yml
 
-transmitter/.vscode/
-
 transmitter/include/
 
 transmitter/lib/
+
+transmitter/.vscode/
 
 receiver/test/
 
@@ -17,10 +17,10 @@ receiver/platformio.ini
 
 receiver/.travis.yml
 
-receiver/.vscode/
-
 receiver/include/
 
 receiver/lib/
+
+receiver/.vscode/
 
 receiver/.DS_Store
