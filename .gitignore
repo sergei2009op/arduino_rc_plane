@@ -11,6 +11,8 @@ transmitter/lib/
 
 transmitter/.vscode/
 
+transmitter/.pio/
+
 receiver/test/
 
 receiver/platformio.ini
@@ -24,3 +26,7 @@ receiver/lib/
 receiver/.vscode/
 
 receiver/.DS_Store
+
+receiver/.pio/
+
+
