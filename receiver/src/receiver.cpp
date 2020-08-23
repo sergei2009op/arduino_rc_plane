@@ -1,8 +1,8 @@
 #include <Arduino.h>
 #include <SPI.h>
-#include "nRF24L01.h"
-#include "RF24.h"
-#include <Servo.h>
+#include <nRF24L01.h>
+#include <RF24.h>
+#include "Servo.h"
 
 #define CHAN_NUM 0x71
 #define THRUST_OUT 6
@@ -11,8 +11,8 @@
 #define PITCH_OUT 4
 #define YAW_OUT 5
 
-RF24 radio(9, 10);                                                          // "создать" модуль на пинах 9 и 10 Для Уно
-byte address[][6] = {"1Node", "2Node", "3Node", "4Node", "5Node", "6Node"}; //возможные номера труб
+RF24 radio(9, 10);                                                          // радиомодуль на пинах 9 и 10 Для Уно
+byte address[][6] = {"1Node", "2Node", "3Node", "4Node", "5Node", "6Node"}; // возможные номера труб
 
 Servo engine;
 Servo roll_left_servo;
@@ -24,7 +24,7 @@ byte recieved_data[4];
 
 void setup()
 {
-  Serial.begin(9600); //открываем порт для связи с ПК
+  Serial.begin(9600); // открываем порт для связи с ПК
 
   engine.attach(THRUST_OUT);
   roll_left_servo.attach(ROLL_OUT_LEFT);
